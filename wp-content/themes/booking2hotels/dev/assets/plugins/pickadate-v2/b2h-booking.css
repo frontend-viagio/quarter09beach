@@ -1,0 +1,63 @@
+.b2h-booking{
+    width: 60%;
+    float: right;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 14px #717171;
+}
+.member-tab{
+    width: 60%;
+    float: right;
+    text-align: center;
+}
+.buttom-member-login {
+    background-color: #002C51;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.buttom-member-register {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.buttom-member-login .fa{
+    color: #fff;
+}
+.buttom-member-login #memberLinkPan {
+    display: inline-block;
+}
+
+.buttom-member-register a{
+    color: #fff;
+}
+.buttom-member-login p, .buttom-member-register p {
+    margin: 0;
+}
+.buttom-member-login a {
+    color: #fff;
+}
+.img-icon-get{
+    width: 60%;
+}
+.img-icon-get {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.b2h-booking .picker__holder{
+    min-width: 230px;
+}
+
+@media (max-width:1366px){
+    .b2h-booking{
+        width: 80%;
+    }
+    .member-tab{
+       width: 80%;
+    }
+    .img-icon-get{
+       width: 80%;
+    }
+}

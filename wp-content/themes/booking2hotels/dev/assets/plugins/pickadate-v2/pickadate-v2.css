@@ -1,0 +1,133 @@
+.no-padding {
+    padding: 0;
+}
+.no-margin {
+    margin: 0;
+}
+.pickadate-container {
+    text-align: center;
+    padding: 20px 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 15px 0;
+    height: 130px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    background: #BFA366;
+}
+.pickadate-container:hover {
+    background: #967C42;
+}
+.pickadate-date {
+    font-weight: 600;
+    margin-top: 3px;
+}
+.pickadate-detail strong {
+    display: block;
+    font-size: 34px;
+    font-weight: 200;
+    line-height: 38px;
+    text-align: center;
+    padding-top: 10px;
+}
+.pickadate-detail em {
+    display: inline;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: solid 2px #0D3452;
+}
+#dateci, #dateco {
+    visibility: hidden;
+    display: none;
+}
+.bg-headerbooking {
+    background-color: #002C51;
+    padding: 10px 0 10px 15px;
+    color: #BAA85D;
+    text-align: left;
+}
+.bg-headerbooking p, .bg-headerpro p{
+    margin: 0
+}
+.bg-headerbooking p{
+    background-image: url(../../images/bg-icon1.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px auto;
+    padding-left: 25px;
+}
+.bgmain-headerbooking{
+    background-color: #BAA85D;
+    color: #002C51;
+}
+.bg-headerpro a{
+    color: #002C51;
+}
+.bg-headerpro{
+    padding: 10px 0;
+    text-align: center;
+    margin-left: -30px;
+}
+.input-container{
+    padding: 10px 0;
+}
+.bg-b2h-booking {
+    padding: 30px;
+}
+.picker, .picker__holder{
+    top: 77px;
+    left: 7px;
+}
+.bg-b2h-discountcode {
+    background-color: #BAA85D;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+.b2h-booking input#discountcode {
+    height: 40px;
+    text-align: center;
+}
+.b2h-booking .form-control{
+    font-size: 13px;
+}
+.input-container .btn-success{
+    background-color: #002C51;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+}
+.input-container .btn-success:hover{
+    background-color: #021321;
+}
+
+@media (max-width: 991px){
+    .b2h-booking {
+        width: 100% !important;
+    }
+    .bg-b2h-booking {
+        padding: 15px !important;
+    }
+    .bg-headerpro {
+        text-align: left;
+        margin-left: 15px;
+    }
+    .member-tab {
+        width: 100% !important;
+    }
+    .bg-headerpro p {
+        background-image: url(../../images/bg-icon2.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 15px auto;
+        padding-left: 25px;
+    }
+    .img-icon-get {
+        width: 100% !important;
+    }
+}

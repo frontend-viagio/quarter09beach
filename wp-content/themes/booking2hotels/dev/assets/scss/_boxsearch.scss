@@ -1,0 +1,63 @@
+.box-search {
+
+	#dateci_root,
+	#dateco_root {
+		position: relative;
+	}
+
+	padding: 10px 0;
+	input {
+		@media screen and (max-width: 991px) {
+			margin-top: 20px;
+		}
+	}
+
+	background: $mainColor;
+
+
+	.button-book {
+		text-align: center;
+		width: 100%;
+
+		@media screen and (max-width: 991px) {
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		@media screen and (min-width: 992px) {
+			width: 70%;
+			position: absolute;
+			right: 0;
+
+		}
+
+		border-radius: 0;
+		margin-top: -10px;
+		height: 54px;
+		background-color: #00b050;
+		border-color: #00b050;
+		line-height: 54px;
+		display: block;
+
+		cursor: pointer;
+
+		a {
+			color: #fff;
+display: block;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&::before {
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 20px solid transparent;
+			border-bottom: 20px solid $mainColor;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}

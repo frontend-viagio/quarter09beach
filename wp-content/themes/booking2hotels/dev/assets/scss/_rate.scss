@@ -1,0 +1,1446 @@
+.select_bh2Curency {
+	z-index: 54 !important;
+}
+//@import "fonts";
+$mainfont: 'Montserrat', sans-serif;
+
+$maincolor: #c00000;
+$secondcolor: #00b050;
+$thirdcolor : #00b050;
+
+$Continue : #00b050;
+$tabColor : $maincolor;
+$FCDefault : #232323;
+$bdCtab : #d3d3d3;
+$tabRoom : $maincolor;
+$tabPackage : $thirdcolor;
+$pricePackage : $thirdcolor;
+$colorTab : #fff;
+$bgTable : #f9f9f9;
+$showMorePack : $thirdcolor;
+$showPackColor : #f9f9f9;
+$body : #f9f9f9;
+$bodyCard : #fff;
+$roomName : $FCDefault;
+$texMaxguest : #8e8e8e;
+$priceSale: $maincolor;
+$txtCurrency : $FCDefault;
+$select : #fff;
+$roomStatus : $secondcolor;
+$roomAvia : green;
+$roomdetail : #5488a1;
+$bestPrice : $maincolor;
+$txtbest : #fff;
+$borderAdd : #c3d3e0;
+$bgAddLeft : $maincolor;
+$bgExleft : #4fc6c3;
+
+$Concolor : #fff;
+$notice : $texMaxguest;
+$tooltip : #333;
+$bgModal : #fff;
+$btnPackage : $thirdcolor;
+$relateDate : #fff;
+$subDate : #ededed;
+$b2hMore : #e8e8e8;
+$borderBcard :#f7f7f7;
+$bannerPro :#db0946;
+$cardBTbor : #f5f5f5;
+$noticeIcon : #ee552d;
+$borderCondition : rgba(142, 142, 142, 0.15);
+$tabSelectDate : #ede4cc;
+$txtSelectDate : #9b8b67;
+$discoundApplied : #8e805f;
+$btnNoshow : #efefef;
+$loader : $maincolor;
+//select_moblie
+$btnMobed : #a7b5c1;
+$moSelect : #fff;
+$ShowMoreMo : #eaeaea;
+$limitMo : #00ca77;
+
+$selectdisable : #ce3d3d;
+$disableborder : #ffd7d4;
+
+//icon
+$b2h_ipolicy : $maincolor;
+$b2h_ipro : $maincolor;
+$b2h_iaccom : $maincolor;
+$b2h_ibreakfast : $maincolor;
+$b2h_imember : $maincolor;
+$b2h_imobile : $maincolor;
+$b2h_iadults : $secondcolor;
+$b2h_ichild : $secondcolor;
+$b2h_iadd : $secondcolor;
+$b2h_itooltip : #a7a7a7;
+$b2h_iplus : $secondcolor;
+
+
+$b2h_iextra : $secondcolor;
+$b2h_idiscount : $discoundApplied;
+$b2h_iselectDate : $txtSelectDate;
+$b2h_iDate : $txtSelectDate;
+$b2h_iconGuest : $secondcolor;
+
+//font
+$fontBody : 14px;
+$titleTab : 18px;
+$titleRoom : 18px;
+$fontBodymo : 14px;
+
+
+
+
+.booking-engine .b2h_rate_v3 .b2h_cardlist .b2h_cardItem .b2h_guests .b2h_iadults, .booking-engine .b2h_rate_v3 .b2h_cardlist .b2h_cardItem .b2h_guests .b2h_ichild, .booking-engine .b2h_rate_v3 .iconAccom {
+       fill: #c00000 !important;
+}
+.booking-engine .icon_allGuest .b2h_iplus {
+    fill: #c00000 !important;
+}
+.booking-engine {
+ 
+    .b2h_select {
+        .custom-options {
+            display: none;
+        }
+
+        .opened {
+            .custom-options {
+                display: block;
+            }
+        }
+    }
+
+    .b2hRateResult {
+        .dbl-spinner-2 {
+            border-right: 4px solid $loader;
+            border-bottom: 4px solid $loader;
+        }
+    }
+
+    .b2h_rate_v3 {
+        * {
+            font-family: $mainfont;
+            font-size: $fontBody;
+        }
+    }
+
+    @mixin button-bg($bg) {
+        background-color: $bg;
+
+        &:hover {
+            background-color: darken($bg, 8%);
+            transition: all 0.3s ease;
+        }
+
+        &:active {
+            background-color: darken($bg, 25%);
+        }
+    }
+
+    .b2h_ {
+        &tabBlock-tab {
+            background-color: $bgTable;
+            border: 1px solid $bdCtab;
+            color: $FCDefault;
+            font-size: $titleTab;
+        }
+
+        &tabBlock-tab.is-active {
+            color: $tabColor;
+            border-color: $bgTable;
+            border-top-color: $tabColor;
+
+            &:before {
+                background-color: $bdCtab;
+            }
+        }
+
+        &tabBlock-tab.is-active::before {
+            background-color: $tabColor;
+        }
+
+        &tabBlock-tab.is-active::after {
+            background-color: $bgTable;
+        }
+
+        &tabBlock-content {
+            background-color: $bgTable;
+        }
+
+    }
+
+    //Curency
+    .select_bh2Curency {
+        .b2h_select {
+            .custom-select-trigger {
+                .b2h_sym {
+                    color: $maincolor;
+                }
+            }
+
+            .custom-option {
+                .b2h_sym {
+                    color: $maincolor;
+                }
+            }
+        }
+    }
+
+    //benefit
+    .b2h_benefits {
+        .title {
+            color: $FCDefault;
+        }
+
+        li {
+            &.item_policy {
+                &.item_low {
+                    .b2h_ipolicy {
+                        fill: $tabPackage;
+                    }
+                }
+            }
+        }
+
+        .item_discountApplied {
+            span {
+                color: $b2h_idiscount;
+            }
+        }
+    }
+
+    svg {
+        &.b2h_ipolicy {
+            fill: $b2h_ipolicy;
+        }
+
+        &.b2h_ipro {
+            fill: $b2h_ipro;
+        }
+
+        &.b2h_iaccom {
+            fill: $b2h_iaccom;
+        }
+
+        &.b2h_ibreakfast {
+            fill: $b2h_ibreakfast;
+        }
+
+        &.b2h_imember {
+            fill: $b2h_imember;
+        }
+
+        &.b2h_imobile {
+            fill: $b2h_imobile;
+        }
+
+        &.b2h_iadults {
+            fill: $b2h_iadults;
+        }
+
+        &.b2h_ichild {
+            fill: $b2h_ichild;
+        }
+
+        &.b2h_iadd {
+            fill: $b2h_iadd;
+        }
+
+        &.b2h_iextra {
+            fill: $b2h_iextra;
+        }
+
+        &.b2h_itooltip {
+            fill: $b2h_itooltip;
+        }
+
+        &.b2h_iplus {
+            fill: $b2h_iplus;
+        }
+
+        &.b2h_idiscount {
+            fill: $b2h_idiscount;
+        }
+
+        &.b2h_iconGuest {
+            fill: $b2h_iconGuest;
+        }
+    }
+
+
+    //Package
+    .package_open {
+        &.borderLight {
+            .b2h_content_package {
+                border: 2px solid $showMorePack !important;
+            }
+        }
+    }
+
+    .borderLight {
+        .b2h_rate_v3 {
+            .b2h_content_package {
+                .b2h_btnShowmore {
+                    .b2h_More {
+                        background-color: $showMorePack !important;
+                        color: $showPackColor !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .b2h_rate_v3 {
+        .b2h_content_package {
+            border: 2px solid $showPackColor;
+
+            .b2h_cardlist {
+                .b2h_cardItem {
+                    .b2h_colPrice {
+                        .price_sale {
+                            color: $pricePackage;
+                        }
+                    }
+                }
+            }
+
+            .b2h_btnShowmore {
+                border-top: 1px solid $b2hMore;
+
+                .b2h_More {
+                    background-color: $b2hMore;
+                    color: $FCDefault;
+                }
+            }
+        }
+
+        .b2h_packImage {
+            p {
+                color: $showPackColor;
+                background: $showMorePack;
+
+                &:after {
+                    border-right: 12px solid $showMorePack;
+                }
+            }
+        }
+
+        .b2h_tabPack {
+            .b2h_tabPackage {
+                border: 1px solid $tabPackage;
+                color: $tabRoom;
+                background-color: transparent;
+
+                &:hover {
+                    background-color: $tabPackage;
+                    color: $colorTab;
+
+                    .text_package {
+                        color: $colorTab;
+                    }
+
+                    span {
+                        color: $colorTab;
+                    }
+
+                    .b2h_itabPack {
+                        fill: $showPackColor;
+                    }
+                }
+
+                .text_package {
+                    color: $secondcolor;
+                }
+
+                span {
+                    color: $secondcolor;
+                }
+
+                .container_pack {
+                    .animate_pack {
+                        background: #380848;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .package_open {
+        .b2h_tabPack {
+            .b2h_tabPackage {
+                background-color: $tabPackage;
+                color: $colorTab;
+
+                .text_package {
+                    color: $colorTab;
+                }
+
+                span {
+                    color: $colorTab;
+                }
+            }
+        }
+    }
+
+
+    //modal
+    .b2h_btn_Pack {
+        color: $btnPackage;
+        border: 1px solid $btnPackage;
+
+        &:hover {
+            background: $btnPackage;
+            color: $showPackColor !important;
+        }
+    }
+
+
+    //end Package
+    .b2h_rate_v3 {
+        background: $body;
+
+        .b2h_cardContent {
+            background: $bgTable;
+
+            &.bestPrice {
+                .b2h_titleDetail {
+                    +.b2h_cardItem {
+                        border: 1px solid $bestPrice;
+
+                        .b2h_colPrice {
+                            .boxBest_price {
+                                background: $bestPrice;
+
+                                .txtPrice {
+                                    color: $txtbest;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .img_roomType {
+                position: relative;
+
+                .b2h_moreDetail {
+                    color: $roomdetail;
+                }
+
+                .banpro {
+                    color: $showPackColor;
+                    background: $bannerPro;
+
+                    &:after {
+                        border-right: 12px solid $bannerPro;
+                    }
+                }
+            }
+        }
+
+        .b2h_cardlist {
+            .title_roomtype {
+                .title_name {
+                    color: $roomName;
+                    font-size: $titleRoom;
+
+                    a {
+                        color: $roomName;
+                        font-size: $titleRoom;
+                    }
+                }
+            }
+
+            .b2h_cardItem {
+                background: $bodyCard;
+
+                .b2h_include {
+                    border-right: 1px solid $bdCtab;
+                }
+
+                .b2h_guests {
+                    .max_guest {
+                        color: $texMaxguest;
+                    }
+
+                    .b2h_iadults {
+                        fill: $secondcolor;
+                    }
+
+                    .b2h_ichild {
+                        fill: $secondcolor;
+                    }
+                }
+
+                .b2h_colPrice {
+                    .price_sale {
+                        color: $priceSale;
+
+                        .txtCurrency {
+                            color: $txtCurrency;
+                        }
+                    }
+
+                    .add_extra_bed {
+                        .select_bed {
+                            .b2h_select {
+                                .custom-select {
+                                    .custom-select-trigger {
+                                        color: $texMaxguest;
+                                    }
+                                }
+                            }
+                        }
+
+                        .txtAdd {
+                            color: $texMaxguest;
+                        }
+
+                        .priceAdd {
+                            color: $priceSale;
+
+                            .currencyBed {
+                                color: $texMaxguest;
+                            }
+                        }
+                    }
+                }
+
+                .b2h_colRoom {
+                    .statusRoom {
+                        color: $maincolor;
+
+                        &.remain {
+                            color: $roomStatus;
+                        }
+                    }
+                }
+            }
+        }
+
+        .b2h_btnShowmore {
+            border-top: 1px solid $b2hMore;
+
+            .b2h_More {
+                background: $b2hMore;
+            }
+        }
+
+
+        .iconAccom {
+            fill: $secondcolor;
+        }
+
+        .b2h_addon {
+            position: relative;
+            border: 1px solid $borderAdd;
+            margin-bottom: 15px;
+            background-color: $body;
+
+            &:before {
+                position: absolute;
+                content: '';
+                left: 0;
+                width: 4px;
+                top: -1px;
+                bottom: -1px;
+                background: $bgAddLeft;
+                display: block;
+            }
+
+            .titleAdd {
+                margin-top: 25px;
+            }
+
+            .b2h_cardItem {
+                .b2h_include {
+                    min-height: 42px;
+                    padding: 10px 15px;
+                    background: $bgTable;
+
+                    .b2h_benefits {
+                        margin-bottom: 0;
+
+                        .item_add {
+                            margin-top: 7px;
+                        }
+                    }
+                }
+
+                .b2h_colPrice {
+                    .price_sale {
+                        line-height: 33px;
+                        position: relative;
+                        top: 4px;
+                    }
+                }
+            }
+
+            &.b2h_addExtra {
+                &:before {
+                    background: $bgExleft;
+                }
+            }
+
+            &.b2h_addTranfer {
+                &:before {
+                    background: $bannerPro;
+                }
+            }
+        }
+
+        .b2h_toContinue {
+            z-index: 54;
+
+            .b2h_boxContinue {
+                border-bottom: 4px solid darken($Continue, 5);
+
+                .b2h_btnContinue {
+                    background-color: $Continue;
+                    color: $Concolor;
+                    border-bottom: 4px solid darken($Continue, 5);
+
+                    &:hover {
+                        background-color: darken($Continue, 5);
+                    }
+                }
+
+                .notice_footer {
+                    color: $notice;
+                }
+            }
+        }
+    }
+
+    //gallery
+    .header-popup h2 {
+        font-family: $mainfont;
+        background-color: #fff;
+        box-shadow: 0 3px 5px #c7c7c7;
+    }
+
+
+    .cancellation-popup strong,
+    .header-popup h3 {
+        font-family: $mainfont;
+        color: #737373
+    }
+
+    .main-popup {
+        font-family: $mainfont;
+        color: #8a8a8a;
+        background-color: #fff;
+    }
+
+    .features-popup {
+        font-family: $mainfont;
+        border-bottom: solid 1px #efefef;
+    }
+
+
+
+    .amenities-popup ul>li,
+    .features-popup ul>li {
+        font-family: $mainfont;
+    }
+
+
+    .b2h_gallery_show {
+        background-color: #fff;
+    }
+
+
+    .lg-outer .lg-thumb {
+
+        &::-webkit-scrollbar-track {
+            background: rgba(#fff, 0.2);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #ccc;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #ccc;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .b2h_rate_v3 {
+            .b2h_tabBlock-tab {
+                background-color: $tabRoom;
+                color: $colorTab;
+                border: 1px solid $tabRoom;
+
+                &.is-active {
+                    color: $colorTab;
+                }
+
+                &.b2h_tabPro {
+                    background: $secondcolor;
+                    border-color: $secondcolor;
+
+                    .b2h_isearch {
+                        fill: $showPackColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .b2h_itabPack {
+        fill: $showMorePack;
+
+        .st4 {
+            fill: $showPackColor;
+        }
+    }
+
+    .b2h_rate_v3 {
+        .b2h_tab_Noshow {
+            background: $tabSelectDate;
+
+            .b2h_iselectDate {
+                fill: $b2h_iDate;
+            }
+
+            .b2h_iDate {
+                fill: $b2h_iDate;
+            }
+
+            span {
+                color: $txtSelectDate;
+            }
+        }
+
+        .b2h_contianer_room {
+            .b2h_cardNoshow {
+                .b2hContent_Noshow {
+                    .b2h_noshowCheck {
+                        .b2h_Checrate_noshow {
+                            background: $maincolor;
+
+                            &:hover {
+                                background: darken($maincolor, 5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .b2h_content_package,
+        .b2h_mobile_package {
+            .b2h_cardNoshow {
+                .b2hContent_Noshow {
+                    .b2h_noshowCheck {
+                        .b2h_Checrate_noshow {
+                            background: $thirdcolor;
+
+                            &:hover {
+                                background: darken($thirdcolor, 5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .b2h_cardNoshow {
+            .b2hContent_Noshow {
+                .title_roomtype {
+                    .title_name {
+                        a {
+                            color: $FCDefault;
+                        }
+                    }
+                }
+
+                .b2hGuest_Noshow {
+                    .b2h_listGuestRoom {
+                        li {
+                            .b2h_iadults {
+                                fill: $texMaxguest;
+                            }
+
+                            .b2h_ichild {
+                                fill: $texMaxguest;
+                            }
+                        }
+                    }
+                }
+
+                .b2h_noshowCheck {
+                    .b2h_Checrate_noshow {
+                        margin-top: 15px;
+                        color: $bgTable;
+                        background: $texMaxguest;
+
+                        &:hover {
+                            background: darken($texMaxguest, 5);
+                        }
+                    }
+                }
+
+                .b2h_linkviewNoshow {
+                    a {
+                        color: $FCDefault;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        .b2h_rate_v3 {
+            .b2h_cardNoshow {
+                border-bottom: 1px solid $btnNoshow;
+            }
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .b2h_rate_v3 {
+            .b2h_conNoshow {
+                .b2h-col-6 {
+                    &:nth-of-type(odd) {
+                        .b2h_cardNoshow {
+                            border-right: 1px solid $btnNoshow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .b2h_select {
+        &.b2h_disable {
+            .custom-select-trigger {
+                background: #dbdbdb;
+            }
+        }
+
+        .custom-select {
+            &.caretTop {
+                .custom-options {
+                    &:before {
+                        border-bottom: 1px solid $bdCtab;
+                        border-right: 1px solid $bdCtab;
+                    }
+
+                }
+            }
+        }
+
+        .custom-select-trigger {
+            color: $FCDefault;
+            background: $select;
+            border: 1px solid $bdCtab;
+        }
+
+        .custom-options {
+            border: 1px solid $bdCtab;
+            box-shadow: 0 2px 1px rgba(0, 0, 0, .07);
+            background: #fff;
+
+            &::-webkit-scrollbar-track {
+                background: rgba(#fff, 0.2);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #ccc;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #ccc;
+            }
+        }
+
+        .custom-options:before {
+            border-top: 1px solid $bdCtab;
+            border-left: 1px solid $bdCtab;
+            background: #fff;
+        }
+
+        .option-hover:before {
+            background: #f9f9f9;
+        }
+
+        .custom-option {
+            border-bottom: 1px solid $bdCtab;
+            color: $FCDefault;
+        }
+
+        .custom-option:hover,
+        .custom-option.selection {
+            background: $tooltip;
+            color: $bgModal;
+
+            span {
+                color: #aeaeae;
+            }
+
+            .b2h_sym {
+                color: #aeaeae;
+            }
+
+            .b2h_valueSe {
+                color: $bgModal;
+            }
+        }
+    }
+
+    .box_toolRate {
+        .b2h_tooltipRate {
+            background: $relateDate !important;
+            color: $texMaxguest !important;
+            border: 1px solid $maincolor;
+
+            li {
+                border-right: 1px solid $subDate;
+
+                .b2h_dateRate {
+                    color: $FCDefault
+                }
+
+                .b2h_dateBenefit {
+                    color: $secondcolor;
+                }
+            }
+        }
+    }
+
+    .icon_allGuest {
+        .b2h_iplus {
+            fill: $b2h_iplus;
+        }
+    }
+
+    .box_tooltip {
+        .b2h_itooltip {
+            fill: $b2h_itooltip;
+        }
+    }
+
+    .b2hTool-bottom {
+        &:after {
+            border-bottom: solid $tooltip 10px;
+        }
+    }
+
+    .box_tooltip .b2h_tooltip {
+        background: $tooltip;
+        color: #fff;
+    }
+
+    .box_tooltip .b2h_tooltip:after {
+        border-top: solid $tooltip 10px;
+    }
+
+    .b2h_rate_v3 {
+        .b2h_ {
+            &modal {
+                background: rgba(74, 74, 74, 0.8);
+            }
+
+            &modal-header {
+                background: $bgModal;
+                color: $FCDefault;
+                border-bottom: 1px solid $bodyCard;
+
+                &.modal_package {
+                    background: $showMorePack;
+                    border-bottom: 1px solid $showMorePack;
+                    color: $showPackColor;
+
+                    .b2h_close-modal {
+                        color: $showPackColor;
+                    }
+                }
+
+                &.modal_detail {
+                    background: $maincolor !important;
+                    border-bottom: 1px solid $maincolor !important;
+                    color: $showPackColor;
+
+                    .b2h_close-modal {
+                        color: $showPackColor;
+                    }
+                }
+
+                &.modal_promotion {
+                    background: $secondcolor !important;
+                    border-bottom: 1px solid $secondcolor !important;
+                    color: $showPackColor;
+
+                    .b2h_close-modal {
+                        color: $showPackColor;
+                    }
+                }
+
+                &.modal_discount {
+                    background: $discoundApplied !important;
+                    border-bottom: 1px solid $discoundApplied !important;
+                    color: $showPackColor;
+
+                    .b2h_close-modal {
+                        color: $showPackColor;
+                    }
+                }
+
+                .b2h_title_modal {
+                    color: $bgModal;
+                }
+            }
+
+            &modal-body {
+                background: $bgModal;
+            }
+
+
+            &modal-trigger {
+                color: $FCDefault;
+            }
+
+            &modal-trigger:hover,
+            &modal-trigger:focus {
+                color: $FCDefault;
+            }
+
+        }
+    }
+
+
+    button {
+        border: 1px solid #333333;
+        outline: none;
+        color: #333333;
+    }
+
+    .b2h_rate_mobileV3 {
+        &.b2h_rate_v3 {
+            .b2h_btnShowmore {
+                background: $ShowMoreMo;
+                box-shadow: 0px -1px 22px -10px #ccc;
+            }
+
+            .b2h_packImage {
+                p {
+                    &:after {
+                        border-right: 24px solid $showMorePack;
+                    }
+                }
+            }
+        }
+
+        .select_bh2Curency {
+            .b2h_select {
+                .custom-select-trigger {
+                    background: #f1f1f1;
+                }
+            }
+        }
+
+        .b2h_tabBlock-tab.is-active {
+            background: $bgTable;
+            box-shadow: 0px 0px 20px -3px #ccc;
+        }
+
+        .b2h_packSum {
+            background: $noticeIcon;
+            color: $showPackColor;
+        }
+
+        * {
+            font-family: $mainfont;
+            font-size: $fontBodymo;
+        }
+
+        .b2h_listRoomCard {
+            box-shadow: 0px 0px 28px -12px #737373;
+            background: $bgTable;
+        }
+
+        .b2h_CaptionCard {
+            border-bottom: 1px solid rgba($texMaxguest, 0.3);
+
+            .b2h_listdetailRoom {
+                li {
+                    color: $texMaxguest;
+                }
+            }
+
+            .b2h_moviewDetail {
+                color: $roomdetail;
+            }
+        }
+
+        .b2h_conditionCard {
+            border-bottom: 4px solid $borderCondition;
+
+            .price_sale {
+                color: $maincolor;
+
+                .night {
+                    color: $FCDefault;
+                }
+            }
+
+            .txtCurrency {
+                color: $FCDefault;
+            }
+        }
+
+        .b2h_AddextraBed {
+            background: $borderBcard;
+
+            .b2h_iextrabed {
+                fill: $btnMobed;
+            }
+
+            .price_per_bed {
+                color: $secondcolor;
+
+                .curency {
+                    color: $FCDefault;
+                }
+            }
+
+            .b2h_select_mobile {
+                .b2h_selectAdd {
+                    color: $moSelect;
+                    background: $btnMobed;
+                }
+            }
+        }
+
+        .b2h_selectNumRoom {
+            border-top: 1px solid rgba($texMaxguest, 0.3);
+
+            .b2h_txtSelectRoom {
+
+                .b2h_ichild,
+                .b2h_iadults {
+                    fill: $btnMobed;
+                }
+            }
+
+            .b2h_selectRight {
+                &.b2h_packdisable {
+                    .b2h_disable {
+                        color: $selectdisable;
+                        border: 1px solid $disableborder;
+                    }
+                }
+            }
+
+            .b2h_select_mobile {
+                .b2h_selectAdd {
+                    color: $moSelect;
+                    background: $maincolor;
+                }
+
+            }
+        }
+
+        .b2h_modailyrate {
+            border-bottom: 1px solid $subDate;
+
+            &.b2h_hasbenefit {
+                .b2h_dateBenefit {
+                    color: $secondcolor;
+                }
+            }
+
+            li {
+                border-right: 1px solid $subDate;
+
+                .b2h_dateRate {
+                    color: $FCDefault;
+                }
+            }
+        }
+
+        .b2h_listGuestRoom {
+            li {
+                .b2h_iadults {
+                    fill: $maincolor;
+                }
+
+                .b2h_ichild {
+                    fill: $maincolor;
+                }
+            }
+        }
+
+        .b2h_moAddons {
+            .b2h_CaptionCard {
+                border-top: 3px solid $maincolor;
+            }
+
+            &.b2h_moExtra {
+                .b2h_CaptionCard {
+                    border-top: 3px solid $thirdcolor;
+                }
+            }
+
+            &.b2h_moTransfer {
+                .b2h_CaptionCard {
+                    border-top: 3px solid $bannerPro;
+                }
+            }
+        }
+
+        .b2h_tabMoPack {
+            .b2h_tabPackage {
+                border: 1px solid $showMorePack;
+                color: $maincolor;
+
+                .b2h_packSumNum {
+                    color: $maincolor;
+                }
+            }
+        }
+
+        .b2h_tabBlock-tabs {
+            .b2h_tabBtnRoomtype {
+                background: $maincolor;
+                color: $colorTab;
+                border: 1px solid $maincolor;
+
+                .b2h_roomSumNum {
+                    color: $colorTab;
+                }
+            }
+        }
+
+        .b2h_benefits {
+            .item_discountApplied {
+                span {
+                    color: $b2h_idiscount;
+                }
+            }
+        }
+
+        .statusRoom {
+            color: $limitMo;
+
+            &.remain {
+                color: $secondcolor !important;
+            }
+        }
+    }
+
+    .package_open {
+        .b2h_tabMoPack {
+            .b2h_tabPackage {
+                border: 1px solid $tabPackage;
+                color: $showPackColor;
+                background: $tabPackage;
+
+                .b2h_packSumNum {
+                    color: $showPackColor;
+                }
+
+                .icon_thor {
+                    fill: $showPackColor;
+                }
+            }
+        }
+    }
+
+    .b2h_rate_mobileV3 {
+        &.b2h_rate_v3 {
+            .b2h_cardNoshow {
+                border-bottom: 1px solid $btnNoshow;
+            }
+        }
+    }
+
+}
+
+.lg-outer .lg-thumb {
+    width: 100% !important;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .b2h_search_bestrate_new {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .b2h_search_bestrate_new {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    .lg-outer .lg-thumb-outer {
+        padding-right: 0 !important;
+    }
+
+    .lg-outer .lg-toogle-thumb {
+        right: 0 !important;
+    }
+
+    .lg-outer.fb-comments .lg-toogle-thumb {
+        right: 400px !important;
+    }
+
+    .lg-outer.fb-comments .lg-thumb-outer {
+        padding-right: 400px !important;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .b2h_search_bestrate_new {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+
+
+.booking-engine .b2h_rate_v3 .b2h_toContinue {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 20px -10px #333;
+}
+
+.booking-engine .b2h_rate_v3 .b2h_toContinue .b2h_boxContinue .b2h_footerMany,
+.booking-engine .b2h_rate_v3 .b2h_toContinue .b2h_btnContinue .b2h_footerMany {
+    margin-bottom: 0;
+}
+
+.booking-engine .b2h_rate_v3 .b2h_toContinue .b2h_boxContinue,
+.booking-engine .b2h_rate_v3 .b2h_toContinue .b2h_btnContinue {
+    box-shadow: none;
+    padding: 20px 30px 8px;
+}
+
+.booking-engine .b2h_rate_v3 {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 320px) {
+    .edit-book .b2h_rate_mobileV3 .b2h_toContinue .b2h_selectNumRoom {
+        margin: 10px 6px 0 0;
+    }
+}
+
+.page-template-template-book .top_menu .btn_topres {
+    display: none !important;
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-template-book .bht_header nav.navbar-default .navbar-nav {
+        padding-right: 0 !important;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .booking-engine .b2h_rate_v3 .b2h_toContinue {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 20px -10px #333;
+    }
+
+    .booking-engine .b2h_rate_v3 .b2h_toContinue .b2h_boxContinue .b2h_footerMany,
+    .booking-engine .b2h_rate_v3 .b2h_toContinue .b2h_btnContinue .b2h_footerMany {
+        margin-bottom: 0;
+    }
+
+    .booking-engine .b2h_rate_v3 .b2h_toContinue .b2h_boxContinue,
+    .booking-engine .b2h_rate_v3 .b2h_toContinue .b2h_btnContinue {
+        box-shadow: none;
+        padding: 20px 30px 8px;
+    }
+
+    .booking-engine .b2h_rate_v3 {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .awesome-weather-current-temp {
+        font-size: 1em !important;
+        padding: 0;
+    }
+
+    .awesome-weather-current-temp sup {
+        font-size: 0.6em !important;
+    }
+
+    .edit-book .b2h_rate_mobileV3.b2h_rate_v3 .b2h_toContinue .b2h_boxContinue {
+        padding: 16px 15px 0;
+    }
+
+    .edit-book .b2h_rate_mobileV3 .b2h_manyTxt {
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .edit-book .b2h_rate_mobileV3 .b2h_toContinue .b2h_selectNumRoom {
+        padding: 2px 0 0;
+        border: none;
+        float: none;
+        display: inline-block;
+        margin: 10px 10px 0;
+    }
+
+    .edit-book .b2h_rate_mobileV3.b2h_rate_v3 .b2h_toContinue .b2h_boxContinue .b2h_btnContinue {
+        width: 100%;
+        border-radius: 0;
+        padding: 10px 50px 10px 15px;
+        margin-top: 7px;
+    }
+
+    .edit-book .b2h_rate_mobileV3 .b2h_toContinue .b2h_selectNumRoom .b2h_txtSelectRoom {
+        font-size: 10px;
+        margin-right: 7px;
+    }
+
+    .edit-book .b2h_rate_mobileV3 .b2h_toContinue .b2h_selectNumRoom .b2h_txtSelectRoom svg {
+        margin: 0;
+    }
+
+    .edit-book .b2h_rate_mobileV3 .b2h_toContinue .b2h_selectNumRoom .b2h_selectRight {
+        float: none;
+    }
+
+    .edit-book .b2h_rate_mobileV3 .b2h_toContinue .b2h_selectNumRoom .b2h_select_mobile .b2h_selectAdd {
+        width: 20px;
+        height: 20px;
+        line-height: 19px;
+    }
+
+    .edit-book .b2h_rate_mobileV3.b2h_rate_v3 .b2h_toContinue .b2h_boxContinue .notice_footer {
+        margin: 0;
+    }
+
+    .edit-book .booking-engine .b2h_rate_v3 {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .edit-book .b2h_rate_mobileV3 .b2h_toContinue .b2h_selectNumRoom {
+        margin: 10px 6px 0 0;
+    }
+}
